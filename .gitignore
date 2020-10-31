@@ -32,3 +32,6 @@ out/
 .vscode/
 /.metadata/
 /bin/
+
+### custom ###
+/bin/
