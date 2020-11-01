@@ -15,7 +15,7 @@ public class BinaryTreeLevelOrderTraversal2 {
 		LinkedList<TreeNode> queue = new LinkedList<>();
 		
         if (root == null) {
-        	return result;
+        		return result;
         }
         
 		queue.add(root);
