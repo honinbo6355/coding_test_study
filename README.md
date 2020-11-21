@@ -10,6 +10,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 ### 프로그래머스
 - 괄호 변환 : https://programmers.co.kr/learn/courses/30/lessons/60058
 - 올바른 괄호의 개수 : https://programmers.co.kr/learn/courses/30/lessons/12929
+- 정수 삼각형 : https://programmers.co.kr/learn/courses/30/lessons/43105
 
 <br />
 
