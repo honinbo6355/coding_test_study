@@ -31,3 +31,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - DFS와BFS : https://www.acmicpc.net/problem/1260
 - 경로 찾기 : https://www.acmicpc.net/problem/11403
 - 특정 거리의 도시 찾기 : https://www.acmicpc.net/problem/18352
+- 바이러스 : https://www.acmicpc.net/problem/2606
