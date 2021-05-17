@@ -34,3 +34,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 바이러스 : https://www.acmicpc.net/problem/2606
 - 단지번호붙이기 : https://www.acmicpc.net/problem/2667
 - 가장 긴 바이토닉 부분 수열 : https://www.acmicpc.net/problem/11054
+- 전깃줄 : https://www.acmicpc.net/problem/2565
