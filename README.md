@@ -36,3 +36,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 가장 긴 바이토닉 부분 수열 : https://www.acmicpc.net/problem/11054
 - 전깃줄 : https://www.acmicpc.net/problem/2565
 - 신나는 함수 실행 : https://www.acmicpc.net/problem/9184
+- RGB거리 : https://www.acmicpc.net/problem/1149
