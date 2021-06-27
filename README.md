@@ -24,6 +24,8 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - Intersection of Two Arrays II : https://leetcode.com/problems/intersection-of-two-arrays-ii/
 - Partition Labels : https://leetcode.com/problems/partition-labels/
 - FloodFill : https://leetcode.com/problems/flood-fill/
+- N-ary Tree Preorder Traversal : https://leetcode.com/problems/n-ary-tree-preorder-traversal/
+- N-ary Tree Postorder Traversal : https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 
 <br />
 
