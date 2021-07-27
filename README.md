@@ -43,3 +43,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 신나는 함수 실행 : https://www.acmicpc.net/problem/9184
 - RGB거리 : https://www.acmicpc.net/problem/1149
 - 단어 정렬 : https://www.acmicpc.net/problem/1181
+- 수 찾기 : https://www.acmicpc.net/problem/1920
