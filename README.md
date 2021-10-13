@@ -44,3 +44,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - RGB거리 : https://www.acmicpc.net/problem/1149
 - 단어 정렬 : https://www.acmicpc.net/problem/1181
 - 수 찾기 : https://www.acmicpc.net/problem/1920
+- 유기농 배추 : https://www.acmicpc.net/problem/1012
