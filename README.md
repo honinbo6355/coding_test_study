@@ -48,3 +48,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 프린터 큐 : https://www.acmicpc.net/problem/1966
 - 균형잡힌 세상 : https://www.acmicpc.net/problem/4949
 - 유기농 배추 : https://www.acmicpc.net/problem/1012
+- 숨바꼭질 : https://www.acmicpc.net/problem/1697
