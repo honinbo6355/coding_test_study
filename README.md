@@ -16,6 +16,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 풍선 터트리기 : https://programmers.co.kr/learn/courses/30/lessons/68646
 - 문자열 압축 : https://programmers.co.kr/learn/courses/30/lessons/60057
 - 오픈채팅방 : https://programmers.co.kr/learn/courses/30/lessons/42888
+- 행렬 테두리 회전하기 : https://school.programmers.co.kr/learn/courses/30/lessons/77485
 
 <br />
 

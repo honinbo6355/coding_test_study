@@ -32,27 +32,27 @@ public class IntersectionOfTwoArrays_Answer {
 	}
 	
 	// 두 배열이 정렬된 상태면 two pointer를 이용해서 최적화 시킬 수 있다.
-	public int[] intersect(int[] nums1, int[] nums2) {
-        List<Integer> list = new ArrayList<>();
-        int i = 0, j = 0;
-
-        Arrays.sort(nums1);
-        Arrays.sort(nums2);
-
-        while (i < nums1.length && j < nums2.length) {
-            if (nums1[i] == nums2[j]) {
-                list.add(nums1[i]);
-                i++;
-                j++;
-            } else if (nums1[i] < nums2[j]) {
-                i++;
-            } else {
-                j++;
-            }
-        }
-
-        return list.stream().mapToInt(k -> k).toArray();
-    }
+//	public int[] intersect(int[] nums1, int[] nums2) {
+//        List<Integer> list = new ArrayList<>();
+//        int i = 0, j = 0;
+//
+//        Arrays.sort(nums1);
+//        Arrays.sort(nums2);
+//
+//        while (i < nums1.length && j < nums2.length) {
+//            if (nums1[i] == nums2[j]) {
+//                list.add(nums1[i]);
+//                i++;
+//                j++;
+//            } else if (nums1[i] < nums2[j]) {
+//                i++;
+//            } else {
+//                j++;
+//            }
+//        }
+//
+//        return list.stream().mapToInt(k -> k).toArray();
+//    }
 	
 	public static void main(String[] args) {
 		IntersectionOfTwoArrays_Answer intersectionOfTwoArrays_Answer = new IntersectionOfTwoArrays_Answer();
