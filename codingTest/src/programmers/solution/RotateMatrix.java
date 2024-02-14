@@ -36,6 +36,7 @@ public class RotateMatrix {
 
         int number = 0;
 
+        // 행렬 초기화
         for (int row=0; row<rows; row++) {
             for (int column=0; column<columns; column++) {
                 maps[row][column] = ++number;
@@ -50,13 +51,14 @@ public class RotateMatrix {
     }
 
     private int rotate(int[][] maps, int[] query) {
+        // 가독성 좋게 변수로 따로 분리
         int startRow = query[0]-1;
         int startColumn = query[1]-1;
         int endRow = query[2]-1;
         int endColumn = query[3]-1;
 
-        int tempVal = maps[startRow][startColumn];
-        int minVal = tempVal;
+        int tempVal = maps[startRow][startColumn]; // 시작 숫자는 임시 변수에 보관한다.
+        int minVal = tempVal; // 시작 숫자를 최소값 변수에 담음
 
         // 북 -> 남
         for (int row=startRow; row<endRow; row++) {
@@ -81,7 +83,7 @@ public class RotateMatrix {
             maps[startRow][column] = maps[startRow][column-1];
             minVal = Math.min(minVal, maps[startRow][column]);
         }
-        maps[startRow][startColumn+1] = tempVal;
+        maps[startRow][startColumn+1] = tempVal; // 임시 변수를 마지막으로 이동한 위치에 업데이트한다.
 
         return minVal;
     }
