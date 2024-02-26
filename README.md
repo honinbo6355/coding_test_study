@@ -54,4 +54,5 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 유기농 배추 : https://www.acmicpc.net/problem/1012
 - 숨바꼭질 : https://www.acmicpc.net/problem/1697
 - 두 개의 손 : https://www.acmicpc.net/problem/16675
+- 배열 돌리기 1 : https://www.acmicpc.net/problem/16926
 - 꽃길 : https://www.acmicpc.net/problem/14620
