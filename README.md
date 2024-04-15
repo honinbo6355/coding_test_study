@@ -58,3 +58,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 꽃길 : https://www.acmicpc.net/problem/14620
 - 정수 삼각형 : https://www.acmicpc.net/problem/1932
 - 스택 수열 : https://www.acmicpc.net/problem/1874
+- 문제집 : https://www.acmicpc.net/problem/1766
