@@ -44,6 +44,8 @@ public class RotateArr {
     }
 
     // 시계 방향으로 90도 회전
+    // 원본 배열 탐색 : 0번째 로우 ~ 마지막 로우까지, 0번째 컬럼부터 마지막 컬럼까지
+    // 회전되는 배열 초기화 방식 : 0번째 로우 ~ 마지막 로우까지, 마지막 컬럼부터 0번째 컬럼까지
     private int[][] rotate(int[][] image, int n) {
         int[][] rotated = new int[n][n];
 
