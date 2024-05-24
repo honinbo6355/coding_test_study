@@ -27,7 +27,7 @@ public class Tuple {
 //                .mapToInt(entry -> Integer.parseInt(entry.getKey()))
 //                .toArray();
 //    }
-    
+
     // 풀이2
     public int[] solution(String s) {
         int[] arr = Arrays.stream(s.split("[{,}]"))
