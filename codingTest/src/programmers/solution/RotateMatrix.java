@@ -30,60 +30,113 @@ public class RotateMatrix {
         })));
     }
 
+// 풀이1
+//    public int[] solution(int rows, int columns, int[][] queries) {
+//        int[] answer = new int[queries.length];
+//        int[][] maps = new int[rows][columns];
+//
+//        int number = 0;
+//
+//        // 행렬 초기화
+//        for (int row=0; row<rows; row++) {
+//            for (int column=0; column<columns; column++) {
+//                maps[row][column] = ++number;
+//            }
+//        }
+//
+//        for (int i=0; i<queries.length; i++) {
+//            answer[i] = rotate(maps, queries[i]);
+//        }
+//
+//        return answer;
+//    }
+//
+//    private int rotate(int[][] maps, int[] query) {
+//        // 가독성 좋게 변수로 따로 분리
+//        int startRow = query[0]-1;
+//        int startColumn = query[1]-1;
+//        int endRow = query[2]-1;
+//        int endColumn = query[3]-1;
+//
+//        int tempVal = maps[startRow][startColumn]; // 시작 숫자는 임시 변수에 보관한다.
+//        int minVal = tempVal; // 시작 숫자를 최소값 변수에 담음
+//
+//        // 북 -> 남
+//        for (int row=startRow; row<endRow; row++) {
+//            maps[row][startColumn] = maps[row + 1][startColumn];
+//            minVal = Math.min(minVal, maps[row][startColumn]);
+//        }
+//
+//        // 서 -> 동
+//        for (int column=startColumn; column<endColumn; column++) {
+//            maps[endRow][column] = maps[endRow][column+1];
+//            minVal = Math.min(minVal, maps[endRow][column]);
+//        }
+//
+//        // 남 -> 북
+//        for (int row=endRow; row>startRow; row--) {
+//            maps[row][endColumn] = maps[row-1][endColumn];
+//            minVal = Math.min(minVal, maps[row][endColumn]);
+//        }
+//
+//        // 동 -> 서
+//        for (int column=endColumn; column>startColumn; column--) {
+//            maps[startRow][column] = maps[startRow][column-1];
+//            minVal = Math.min(minVal, maps[startRow][column]);
+//        }
+//        maps[startRow][startColumn+1] = tempVal; // 임시 변수를 마지막으로 이동한 위치에 업데이트한다.
+//
+//        return minVal;
+//    }
+
+    // 풀이2
     public int[] solution(int rows, int columns, int[][] queries) {
+        int[][] arr = new int[rows][columns];
+        int num = 0;
         int[] answer = new int[queries.length];
-        int[][] maps = new int[rows][columns];
 
-        int number = 0;
-
-        // 행렬 초기화
         for (int row=0; row<rows; row++) {
             for (int column=0; column<columns; column++) {
-                maps[row][column] = ++number;
+                arr[row][column] = ++num;
             }
         }
 
         for (int i=0; i<queries.length; i++) {
-            answer[i] = rotate(maps, queries[i]);
+            answer[i] = rotate(arr, queries[i]);
         }
 
         return answer;
     }
 
-    private int rotate(int[][] maps, int[] query) {
-        // 가독성 좋게 변수로 따로 분리
-        int startRow = query[0]-1;
-        int startColumn = query[1]-1;
-        int endRow = query[2]-1;
-        int endColumn = query[3]-1;
+    private int rotate(int[][] arr, int[] query) {
+        int startRowIdx = query[0]-1;
+        int startColumnIdx = query[1]-1;
+        int endRowIdx = query[2]-1;
+        int endColumnIdx = query[3]-1;
 
-        int tempVal = maps[startRow][startColumn]; // 시작 숫자는 임시 변수에 보관한다.
-        int minVal = tempVal; // 시작 숫자를 최소값 변수에 담음
+        int tempVal = arr[startRowIdx][startColumnIdx];
+        int minVal = tempVal;
 
-        // 북 -> 남
-        for (int row=startRow; row<endRow; row++) {
-            maps[row][startColumn] = maps[row + 1][startColumn];
-            minVal = Math.min(minVal, maps[row][startColumn]);
+        for (int row=startRowIdx; row<endRowIdx; row++) {
+            arr[row][startColumnIdx] = arr[row+1][startColumnIdx];
+            minVal = Math.min(minVal, arr[row+1][startColumnIdx]);
         }
 
-        // 서 -> 동
-        for (int column=startColumn; column<endColumn; column++) {
-            maps[endRow][column] = maps[endRow][column+1];
-            minVal = Math.min(minVal, maps[endRow][column]);
+        for (int column=startColumnIdx; column<endColumnIdx; column++) {
+            arr[endRowIdx][column] = arr[endRowIdx][column+1];
+            minVal = Math.min(minVal, arr[endRowIdx][column+1]);
         }
 
-        // 남 -> 북
-        for (int row=endRow; row>startRow; row--) {
-            maps[row][endColumn] = maps[row-1][endColumn];
-            minVal = Math.min(minVal, maps[row][endColumn]);
+        for (int row=endRowIdx; row>startRowIdx; row--) {
+            arr[row][endColumnIdx] = arr[row-1][endColumnIdx];
+            minVal = Math.min(minVal, arr[row-1][endColumnIdx]);
         }
 
-        // 동 -> 서
-        for (int column=endColumn; column>startColumn; column--) {
-            maps[startRow][column] = maps[startRow][column-1];
-            minVal = Math.min(minVal, maps[startRow][column]);
+        for (int column=endColumnIdx; column>startColumnIdx+1; column--) {
+            arr[startRowIdx][column] = arr[startRowIdx][column-1];
+            minVal = Math.min(minVal, arr[startRowIdx][column-1]);
         }
-        maps[startRow][startColumn+1] = tempVal; // 임시 변수를 마지막으로 이동한 위치에 업데이트한다.
+        arr[startRowIdx][startColumnIdx+1] = tempVal;
 
         return minVal;
     }
