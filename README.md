@@ -23,6 +23,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 네트워크 : https://school.programmers.co.kr/learn/courses/30/lessons/43162
 - 전력망을 둘로 나누기 : https://school.programmers.co.kr/learn/courses/30/lessons/86971?language=java
 - 카펫 : https://school.programmers.co.kr/learn/courses/30/lessons/42842
+- 소수 찾기 : https://school.programmers.co.kr/learn/courses/30/lessons/42839
 
 <br />
 
