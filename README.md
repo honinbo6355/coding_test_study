@@ -28,6 +28,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 여행 경로 : https://school.programmers.co.kr/learn/courses/30/lessons/43164
 - 구명보트 : https://school.programmers.co.kr/learn/courses/30/lessons/42885
 - 가장 먼 노드 : https://school.programmers.co.kr/learn/courses/30/lessons/49189
+- 순위 : https://school.programmers.co.kr/learn/courses/30/lessons/49191
 
 <br />
 
