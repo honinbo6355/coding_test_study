@@ -17,43 +17,80 @@ public class FindIfPathExistsInGraph {
         System.out.println(f.validPath(6, new int[][] {{0,1},{0,2},{3,5},{5,4},{4,3}}, 0, 5));
     }
 
+    // 풀이1
+//    public boolean validPath(int n, int[][] edges, int source, int destination) {
+//        List<List<Integer>> list = new ArrayList<>();
+//        Queue<Integer> queue = new LinkedList<>();
+//        boolean[] isVisited = new boolean[n];
+//        boolean answer = false;
+//
+//        for (int i=0; i<n; i++) {
+//            list.add(new ArrayList<>());
+//        }
+//
+//        for (int[] edge : edges) {
+//            List<Integer> starts = list.get(edge[0]);
+//            List<Integer> ends = list.get(edge[1]);
+//
+//            starts.add(edge[1]);
+//            ends.add(edge[0]);
+//        }
+//
+//        queue.add(source);
+//
+//        while (!queue.isEmpty()) {
+//            int element = queue.poll();
+//
+//            if (element == destination) {
+//                answer = true;
+//                break;
+//            }
+//
+//            for (int e : list.get(element)) {
+//                if (isVisited[e]) {
+//                    continue;
+//                }
+//                isVisited[e] = true;
+//                queue.add(e);
+//            }
+//        }
+//
+//        return answer;
+//    }
+
+    // 풀이2
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         List<List<Integer>> list = new ArrayList<>();
-        Queue<Integer> queue = new LinkedList<>();
         boolean[] isVisited = new boolean[n];
-        boolean answer = false;
+        Queue<Integer> queue = new LinkedList<>();
 
         for (int i=0; i<n; i++) {
             list.add(new ArrayList<>());
         }
 
         for (int[] edge : edges) {
-            List<Integer> starts = list.get(edge[0]);
-            List<Integer> ends = list.get(edge[1]);
-
-            starts.add(edge[1]);
-            ends.add(edge[0]);
+            list.get(edge[0]).add(edge[1]);
+            list.get(edge[1]).add(edge[0]);
         }
 
         queue.add(source);
+        isVisited[source] = true;
 
         while (!queue.isEmpty()) {
             int element = queue.poll();
 
             if (element == destination) {
-                answer = true;
-                break;
+                return true;
             }
 
             for (int e : list.get(element)) {
-                if (isVisited[e]) {
-                    continue;
+                if (!isVisited[e]) {
+                    isVisited[e] = true;
+                    queue.add(e);
                 }
-                isVisited[e] = true;
-                queue.add(e);
             }
         }
 
-        return answer;
+        return false;
     }
 }
