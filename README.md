@@ -30,6 +30,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 가장 먼 노드 : https://school.programmers.co.kr/learn/courses/30/lessons/49189
 - 순위 : https://school.programmers.co.kr/learn/courses/30/lessons/49191
 - 단속카메라 : https://school.programmers.co.kr/learn/courses/30/lessons/42884
+- 두 큐 합 같게 만들기 : https://school.programmers.co.kr/learn/courses/30/lessons/118667
 
 <br />
 
