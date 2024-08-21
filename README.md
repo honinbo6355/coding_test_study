@@ -52,6 +52,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - Subrectangle Queries : https://leetcode.com/problems/subrectangle-queries/description/
 - Group The People Given The Group Size They Belong To : https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description/
 - Iterator for Combination - https://leetcode.com/problems/iterator-for-combination/
+- Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/description/
 
 <br />
 
