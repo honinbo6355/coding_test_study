@@ -84,3 +84,8 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - 문제집 : https://www.acmicpc.net/problem/1766
 - 0 만들기 : https://www.acmicpc.net/problem/7490
 - 촌수계산 : https://www.acmicpc.net/problem/2644
+
+<br />
+
+### 개념 정리 문제
+- 계산식에 하나의 괄호쌍을 넣어서 최대값 구하기 : codingTest/src/example/CalculateExpression.java
