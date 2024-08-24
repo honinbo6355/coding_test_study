@@ -2,6 +2,9 @@ package example;
 
 import java.util.Stack;
 
+/**
+ * - 계산식에 하나의 괄호쌍을 넣어서 최대값 구하기
+ */
 public class CalculateExpression {
     public static void main(String[] args) {
         CalculateExpression c = new CalculateExpression();

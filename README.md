@@ -89,3 +89,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 
 ### 개념 정리 문제
 - [계산식에 하나의 괄호쌍을 넣어서 최대값 구하기](./codingTest/src/example/CalculateExpression.java)
+- [1로 연결된 섬들 중 최대 둘레 구하기](./codingTest/src/example/CalculatePerimeter.java)
