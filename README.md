@@ -88,4 +88,4 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 <br />
 
 ### 개념 정리 문제
-- 계산식에 하나의 괄호쌍을 넣어서 최대값 구하기 : codingTest/src/example/CalculateExpression.java
+- [계산식에 하나의 괄호쌍을 넣어서 최대값 구하기](./codingTest/src/example/CalculateExpression.java)
