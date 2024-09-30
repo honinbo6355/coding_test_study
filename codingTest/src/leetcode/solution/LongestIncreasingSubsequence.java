@@ -15,8 +15,41 @@ public class LongestIncreasingSubsequence {
         System.out.println(l.lengthOfLIS(new int[] {7,7,7,7,7,7,7}));
     }
 
+    // 첫번째 풀이
+//    public int lengthOfLIS(int[] nums) {
+//        // 정렬된 결과 리스트를 대상으로 이진 탐색을 하는 전략이다.
+//        List<Integer> list = new ArrayList<>();
+//
+//        for (int num : nums) {
+//            if (list.isEmpty() || list.get(list.size()-1) < num) {
+//                list.add(num);
+//            } else {
+//                int idx = binarySearch(list, num);
+//                list.set(idx, num);
+//            }
+//        }
+//        return list.size();
+//    }
+//
+//    private int binarySearch(List<Integer> list, int target) {
+//        int left = 0;
+//        int right = list.size()-1;
+//
+//        while (left <= right) {
+//            int mid = (left+right) / 2;
+//            if (list.get(mid) == target) {
+//                return mid; // 기존 요소에 덮어쓰기
+//            } else if (list.get(mid) > target) {
+//                right = mid-1;
+//            } else {
+//                left = mid+1;
+//            }
+//        }
+//        return left; // list의 가장 마지막 인덱스값 반환됨. 결국 최대값이 교체되는 경우이다.
+//    }
+
+    // 두번째 풀이
     public int lengthOfLIS(int[] nums) {
-        // 정렬된 결과 리스트를 대상으로 이진 탐색을 하는 전략이다.
         List<Integer> list = new ArrayList<>();
 
         for (int num : nums) {
@@ -27,23 +60,26 @@ public class LongestIncreasingSubsequence {
                 list.set(idx, num);
             }
         }
+
         return list.size();
     }
 
-    private int binarySearch(List<Integer> list, int target) {
-        int left = 0;
-        int right = list.size()-1;
+    private int binarySearch(List<Integer> list, int num) {
+        int startIdx = 0;
+        int endIdx = list.size()-1;
 
-        while (left <= right) {
-            int mid = (left+right) / 2;
-            if (list.get(mid) == target) {
-                return mid; // 기존 요소에 덮어쓰기
-            } else if (list.get(mid) > target) {
-                right = mid-1;
+        while (startIdx <= endIdx) {
+            int midIdx = (startIdx+endIdx)/2;
+
+            if (list.get(midIdx) == num) {
+                return midIdx;
+            } else if (list.get(midIdx) <= num) {
+                startIdx = midIdx+1;
             } else {
-                left = mid+1;
+                endIdx = midIdx-1;
             }
         }
-        return left; // list의 가장 마지막 인덱스값 반환됨. 결국 최대값이 교체되는 경우이다.
+
+        return startIdx;
     }
 }
