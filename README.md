@@ -55,6 +55,7 @@ answer 패키지는 모범 답안 풀이이고, solution 패키지는 제가 푼
 - Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/description/
 - Find Right Interval - https://leetcode.com/problems/find-right-interval/description/
 - Rotate Image - https://leetcode.com/problems/rotate-image/description/
+- Assign Cookies - https://leetcode.com/problems/assign-cookies/description/
 
 <br />
 
