@@ -1,5 +1,10 @@
 package leetcode.solution
 
+/**
+ * - https://leetcode.com/problems/assign-cookies/description/
+ * - 그리디 문제
+ * - 내림차순으로 정렬 후, 값 차이가 가장 적은 요소들끼리 비교한다.
+ */
 class AssignCookies {
     fun findContentChildren(g: IntArray, s: IntArray): Int {
         val sortedArrayDescendingFactor = g.sortedArrayDescending()
